@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Biglietteria</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>
+                Calcola il prezzo del tuo biglietto
+            </h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="insert_dati">
+
+                <!-- Dati da inserire -->
+                <div class="row d_flex justify_around">
+
+                    <!-- Nome e/o cognome -->
+                    <span>
+                        <h3>Nome Cognome</h3>
+                        <input type="text" id="name">   
+                    </span>
+
+                    <!-- Km da percorrere -->
+                    <span>
+                        <h3>Km da percorrere</h3>
+                        <input type="number">
+                    </span>
+                    
+                    <!-- Fascia d'età -->
+                    <span>
+                        <h3>Fascia d'età</h3>
+                        <select name="eta" id="eta">
+                            <option value="minorenne">Minorenne</option>
+                            <option value="over65">Over 65</option>
+                        </select>
+                    </span>
+                    
+                </div>
+                <!-- /Dati da inserire -->
+
+                <!-- Submit e reset -->
+                <div class="row d_flex justify_center">
+                    <span class="btn">
+                        <button id="confirm">Genera</button>
+                    </span>
+
+                    <span class="btn">
+                        <button id="delete">Annulla</button>
+                    </span>
+                </div>
+                <!-- /Submit e reset -->
+
+            </div>
+        </div>
+    </main>
+    
+
+
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
