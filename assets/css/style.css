@@ -20,6 +20,11 @@ Utility
     margin: auto;
 }
 
+.clearfix{
+    display: table;
+    content: "";
+    clear: both;
+}
 
 .d_flex{
     display: flex;
@@ -37,13 +42,18 @@ Utility
 .justify_center{
     justify-content: center;
 }
+
+.d_column{
+    flex-direction: column;
+}
 /*********
 Header
 **********/
 
-h1{
+h2{
     text-transform: uppercase;
     margin: 2rem;
+    font-size: 2.5rem;
 }
 
 
@@ -51,14 +61,21 @@ h1{
 Main
 ************/
 
-.insert_dati{
+.insert_dati, .biglietto{
     width: 80%;
-    height: 300px;
+    padding: 1rem;
     margin: auto;
     background-color: white;
-    color: #C02C62;
+}
+
+.insert_dati{
     border-radius: 20px;
     box-shadow: 0 0 15px black;
+    color: #C02C62;
+}
+
+.biglietto{
+    color: black;
 }
 
 .row {
@@ -110,3 +127,45 @@ select{
     border: 2px solid #A064A1;
     background-color: rgb(223, 215, 215);
 }
+
+h4{
+    text-align: left;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+
+    /* TICKET */
+.ticket_left{
+    background-color: #808080;
+    width: 25%;
+    float: left;
+    text-align: left;
+}
+
+.ticket_right{
+    width: 75%;
+    float: left;
+    border-top: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+}
+
+.ticket_left h4{
+    padding: 2rem 2rem 0.5rem 2rem;
+}
+
+#username{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 2rem;
+}
+
+.ticket_right > div:first-child{
+    width: 40%;
+}
+
+.ticket_right > div{
+    width: calc(100% / 3);
+    text-align: left;
+}
+    /* /TICKET */
