@@ -27,13 +27,13 @@
                     <!-- Nome e/o cognome -->
                     <span>
                         <h3>Nome Cognome</h3>
-                        <input type="text" id="name">   
+                        <input type="text" id="name" value="">   
                     </span>
 
                     <!-- Km da percorrere -->
                     <span>
                         <h3>Km da percorrere</h3>
-                        <input type="number">
+                        <input type="text" id="percorso" value="">
                     </span>
                     
                     <!-- Fascia d'età -->
@@ -41,6 +41,7 @@
                         <h3>Fascia d'età</h3>
                         <select name="eta" id="eta">
                             <option value="minorenne">Minorenne</option>
+                            <option value="maggiorenne">Maggiorenne</option>
                             <option value="over65">Over 65</option>
                         </select>
                     </span>
@@ -64,9 +65,11 @@
             <!-- Biglietto -->
             <h2>il tuo biglietto</h2>
 
+            <!-- Dettagli passeggero -->
             <div class="biglietto clearfix">
-                <h4>dettagli passeggero</h4>
+                <h4>dettaglio passeggeri</h4>
                 
+                <!-- Nome passeggero -->
                 <div class="ticket_left">
                     <h4>nome passeggero</h4>
                     
@@ -74,31 +77,31 @@
                 </div>
 
                 <div class="ticket_right d_flex">
-                    <div class="d_flex d_column">
+                    <div class="d_flex d_column justify_around">
                         <span>Offerta</span>
 
-                        <span id="sconto">Sconto Minorenne</span>
+                        <span id="sconto"></span>
 
                     </div>
 
-                    <div class="d_flex d_column">
-                        <span>Offerta</span>
+                    <div class="d_flex d_column justify_around">
+                        <span>Carrozza</span>
 
-                        <span id="sconto">Sconto Minorenne</span>
-
-                    </div>
-
-                    <div class="d_flex d_column">
-                        <span>Offerta</span>
-
-                        <span id="sconto">Sconto Minorenne</span>
+                        <span id="carrozza"></span>
 
                     </div>
 
-                    <div class="d_flex d_column">
-                        <span>Offerta</span>
+                    <div class="d_flex d_column justify_around">
+                        <span>Codice CP</span>
 
-                        <span id="sconto">Sconto Minorenne</span>
+                        <span id="cp_code"></span>
+
+                    </div>
+
+                    <div class="d_flex d_column justify_around">
+                        <span>Costo biglietto</span>
+
+                        <span id="costo"></span>
 
                     </div>
 
