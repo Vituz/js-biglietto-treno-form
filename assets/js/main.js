@@ -40,7 +40,7 @@ document.getElementById("confirm").addEventListener("click", function(){
     carrozzaEl.innerHTML = rndNumber(1, 10);
 
     cpCodeEl = document.getElementById("cp_code");
-    cpCodeEl.innerHTML = rndNumber(100000, 90000);
+    cpCodeEl.innerHTML = rndNumber(99999, 90000);
 
 });
 
